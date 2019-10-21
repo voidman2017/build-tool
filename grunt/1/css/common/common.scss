@@ -1,0 +1,12 @@
+$base-color:#eee;
+$c-blue:blue;
+$c-red:red;
+body{
+    background: $base-color;
+    p{
+        color:$c-blue;
+        span{
+            color:$c-red;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+grunt-study 这个项目是由 princed 创建的，现在的版本是 1.0.0
