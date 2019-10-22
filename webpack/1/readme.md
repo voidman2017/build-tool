@@ -33,3 +33,39 @@ webpack xxx.js --output-filename bundle.js --output-path . --mode development
     ]
 }
 ```
+# babel编译
+作用：由于js中一些新语法在旧版本浏览器中不兼容，因为有了babel工具可以将其转换成旧版本浏览器可以运行的代码。  
+babel编译器：babel 编译器会从项目的根目录下的 .babelrc 文件中读取配置。主要配置的内容包含 presets-预设 和 plugins-插件。   
+
+plugins:  
+主要使用的有：babel-polyfill、 babel-runtime、 babel-plugin-transform-runtime  
+
+babel-polyfill 和 babel-runtime 的区别：   
+- babel-polyfill  
+原理是将当前运行环境中没有实现的一些方法进行兼容。通过向全局对象和内置对象的prototype上添加方法来实现的。  
+缺点： 造成全局空间污染  
+
+- babel-runtime  
+将es6编译成es5去执行。使用其中提供的工具函数来实现es6语法功能。
+
+以当前项目为例，在不使用babel编译的情况，编译后的js文件大小是17kb。使用 babel-polifill 进行编译的文件大小是454kb。其中搜索 'prototype' 是 351 个。启用插件 babel-plugin-transform-runtime 后，Babel 就会使用 babel-runtime 下的工具函数，转译代码,最终编译文件的大小是96kb。其中搜索 'prototype' 是 56个。  
+
+presets:  
+presets属性告诉Babel要转换的源码使用了哪些新的语法特性，presets是一组Plugins的集合。
+目前推荐使用 babel-preset-env：
+```javascript
+{
+  "presets": ['env']
+}
+```
+但是单独使用它，不能对对象解构进行编译：
+```javascript
+const obj1 = { name: 1 }
+const obj2 = { age: 24 }
+const obj = { ...obj1, ...obj2 }
+console.log(obj)
+```
+可以添加 [transform-object-reset-spread](https://www.npmjs.com/package/babel-plugin-transform-object-rest-spread)  进行支持。  
+也可以添加 [stage-0](https://www.npmjs.com/package/babel-preset-stage-0) 进行支持。
+
+

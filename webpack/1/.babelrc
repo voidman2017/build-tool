@@ -1,12 +1,15 @@
 {
-    "plugins": [
-     ],
-     "presets": [
-       [
-         "env",
-         {
-           "modules": false
-         }
-       ],
+  "plugins": [
+    // "transform-object-rest-spread",
+    [
+      "transform-runtime",
+      {
+        "polyfill": false
+      }
     ]
-  }
+  ],
+  "presets": [
+    "stage-0",
+    "env",
+  ]
+}

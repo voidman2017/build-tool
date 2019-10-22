@@ -1,5 +1,6 @@
 import './css/index.scss';
 import name from './js/name';
+// import "babel-polyfill";
 
 class Class {
     constructor() {
