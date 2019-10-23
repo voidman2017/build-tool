@@ -1,5 +1,6 @@
-import 'polyfill-array-includes';
-const name = 'hello~~~'
+// import 'polyfill-array-includes';
+
+const name = 'hello~'
 
 const list = [1, 2, 3, 4];
 list.forEach((item) => {

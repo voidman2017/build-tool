@@ -1,7 +1,6 @@
 import './css/index.scss';
 import name from './js/name';
 // import "babel-polyfill";
-// import 'polyfill-array-includes';
 
 class Class {
     constructor() {
