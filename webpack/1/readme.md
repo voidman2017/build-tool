@@ -48,7 +48,9 @@ babel-polyfill 和 babel-runtime 的区别：
 - babel-runtime  
 将es6编译成es5去执行。使用其中提供的工具函数来实现es6语法功能。
 
-以当前项目为例，在不使用babel编译的情况，编译后的js文件大小是17kb。使用 babel-polifill 进行编译的文件大小是454kb。其中搜索 'prototype' 是 351 个。启用插件 babel-plugin-transform-runtime 后，Babel 就会使用 babel-runtime 下的工具函数，转译代码,最终编译文件的大小是96kb。其中搜索 'prototype' 是 56个。  
+以当前项目为例，在不使用babel编译的情况，编译后的js文件大小是17kb。  
+使用 babel-polifill,直接在源文件中 `import 'babel-polyfill'` 进行编译耗时1000ms，文件大小是454kb。其中搜索 'prototype' 是 351 个,这是因为 babel-polyfill 是通过添加大量原型方法来实现兼容的。   
+启用插件 babel-plugin-transform-runtime ，在 .babelrc 中 plugins 进行配置。Babel 就会使用 babel-runtime 下的工具函数，转译代码,最终编译耗时640ms，文件的大小是96kb。其中搜索 'prototype' 是 56个。  
 
 presets:  
 presets属性告诉Babel要转换的源码使用了哪些新的语法特性，presets是一组Plugins的集合。
@@ -66,6 +68,24 @@ const obj = { ...obj1, ...obj2 }
 console.log(obj)
 ```
 可以添加 [transform-object-reset-spread](https://www.npmjs.com/package/babel-plugin-transform-object-rest-spread)  进行支持。  
-也可以添加 [stage-0](https://www.npmjs.com/package/babel-preset-stage-0) 进行支持。
+也可以添加 [stage-0](https://www.npmjs.com/package/babel-preset-stage-0) 进行支持。  
+最终配置可能是下面这个样子：  
+```javascript
+{
+  "plugins": [
+    [
+      "transform-runtime",
+      {
+        "polyfill": false
+      }
+    ]
+  ],
+  "presets": [
+    "stage-0",
+    "env",
+  ]
+}
+```
+编译耗时 650ms ，编译文件大小 62kb。prototype 49个。
 
 
