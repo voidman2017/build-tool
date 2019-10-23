@@ -25,6 +25,7 @@
     "webpack-cli": "^3.3.9"
   },
   "dependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "polyfill-array-includes": "^2.0.0"
   }
 }

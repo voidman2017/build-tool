@@ -86,6 +86,10 @@ console.log(obj)
   ]
 }
 ```
-编译耗时 650ms ，编译文件大小 62kb。prototype 49个。
-
-
+编译耗时 650ms ，编译文件大小 62kb，prototype 49个。由于 polyfill 设置 false，所以发现没有对 promise 进行编译，因而在ie中无法正常运行：
+![](./img/1-polyfill-false-ie.png);
+将 polyfill 选项设置成 true 或者不设置（默认值是true），编译耗时 ，编译文件大小 127kb，prototype 95个。可以发现 promise 已经做了兼容处理,此时已经能够在ie中正常运行。
+```javascript
+var _promise = __webpack_require__(/*! babel-runtime/core-js/promise */ "./node_modules/babel-runtime/core-js/promise.js");
+```
+此时发现如果代码中包含 `console.log([1, 2, 3].includes(2))` Array.prototype.includes 的使用，也是不会被编译的，在ie中还是无法正常运行。这里将使用 [polyfill-array-includes](https://www.npmjs.com/package/polyfill-array-includes) 进行polyfill

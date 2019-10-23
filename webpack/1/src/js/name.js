@@ -1,3 +1,4 @@
+import 'polyfill-array-includes';
 const name = 'hello~~~'
 
 const list = [1, 2, 3, 4];
@@ -44,8 +45,9 @@ console.log(a, b, c)
 const obj1 = { name: 1 }
 const obj2 = { age: 24 }
 // const obj = { ...obj1, ...obj2 }
-console.log(obj)
+// console.log(obj)
 
 console.log([1, 2, 3].includes(2))
+
 
 export default name;

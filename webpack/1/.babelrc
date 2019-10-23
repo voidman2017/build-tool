@@ -4,7 +4,7 @@
     [
       "transform-runtime",
       {
-        "polyfill": false
+        // "polyfill": true
       }
     ]
   ],
