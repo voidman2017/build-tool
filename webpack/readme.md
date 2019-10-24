@@ -33,6 +33,102 @@ webpack xxx.js --output-filename bundle.js --output-path . --mode development
     ]
 }
 ```
+# entry
+入口起点指示webpack应该使用某个模块作为构建内部依赖图的开始。  
+写法分为单个入口语法和对象语法。  
+```javascript
+//单个入口（简写）语法
+module.exports = {
+  entry: 'XXXXXX'
+};
+//对象语法 
+module.exports = {
+  entry: {
+    app: 'XXXXXXXX',
+    adminApp: 'XXXXXXX'
+  }
+};
+```
+向 entry 属性传入文件路径数组，将创建出一个 多主入口(multi-main entry)。在你想要一次注入多个依赖文件，并且将它们的依赖导向(graph)到一个 chunk 时，这种方式就很有用。  
+这里有一个技巧，比如有一些模块不需要在开发环境下包含进来，只需要在生产环境存在，就可以在不同环境下对entry分别进行配置。
+
+# output
+告诉webpack在哪里输出创建的bundle，以及如何命名。  
+```javascript
+module.exports = {
+  //...
+  output: {
+    filename: '[name].[hash].js',
+    path: __dirname + '/dist'
+  }
+};
+```
+
+# optimization
+从 webpack 4 开始，会根据你选择的 mode 来执行不同的优化，不过所有的优化还是可以手动配置和重写。  
+所以为什么在使用webpack4时，只要传入 mode:'production' 就可以完成一些优化，例如代码压缩。
+## [splitChunks](https://webpack.docschina.org/plugins/split-chunks-plugin/)
+对于动态导入模块，默认使用 webpack v4+ 提供的全新的通用分块策略(common chunk strategy)  
+栗子(参见 4-build):   
+在entry多入口的情况下会打包输出多个bundle。但是如果在不同的bundle中有某些模块被多次引入，即公共模块，如果这个时候不做处理，就会在多个bundle中含有重复代码。   
+在这个栗子中，多入口：
+```javascript
+app: _p('../src/app.js'),
+app2: _p('../src/app copy 2.js'),
+app3: _p('../src/app copy 3.js'),
+app4: _p('../src/app copy 4.js'),
+app5: _p('../src/app copy 5.js'),
+```
+每个入口文件都相同：
+```javascript
+/* === react === */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from '@views/app';
+import '@css/index';
+import '@css/base';
+import '@css/reset';
+ReactDOM.render(
+    <App />,
+    document.getElementById('app1')
+)
+if (module.hot) {
+    module.hot.accept();
+}
+```
+可以发现都引入了 react 和 react-dom。如果不做任何处理，最终打包的结果是：
+![](./img/2-build.png)
+
+
+`splitChunks使用`:
+```javascript
+splitChunks: {
+    chunks: 'all',  // all async initial 选择对哪些块进行优化
+    minSize: 0,  // 被拆分的最小大小（压缩前）
+    minChunks: 6,  // 被共享的最小次数
+    // maxAsyncRequests: 1,  // 最大按需求并行请次数
+    // maxInitialRequests: 1,  // 最大初始化并行请求数
+    // automaticNameDelimiter: '-',  // 自动命名分隔符
+    // name: true, // 自动为块命名
+    name:'common',
+    cacheGroups: {
+        vendors: {
+            test: /[\\/]node_modules[\\/]/,
+            priority: -10
+        },
+        default: {
+            minChunks: 2,
+            priority: -20,
+            reuseExistingChunk: true
+        }
+    }
+}
+```
+使用splitChunks进行处理，最终打包的结果是：
+![](./img/3-build.png)
+
+
+
 # babel编译
 作用：由于js中一些新语法在旧版本浏览器中不兼容，因为有了babel工具可以将其转换成旧版本浏览器可以运行的代码。  
 babel编译器：babel 编译器会从项目的根目录下的 .babelrc 文件中读取配置。主要配置的内容包含 presets-预设 和 plugins-插件。   
@@ -120,4 +216,304 @@ webpack-dev-server 之所以能够启动服务来用于开发，阅读源码可�
 https://juejin.im/post/5cabfc7bf265da035e210197  
 可以看到在开发过程中，即使没有进行打包编译，硬盘中不存在打包之后的文件，我们还是能够在浏览器正常通过webpack-dev-server提供的服务进行访问，从而猜想读写过程是在内存中完成的。  
 查看源码，发现有一个模块是 webpack-dev-middleware。在 webpack-dev-middleware/lib/fs.js 中，引用了 `const MemoryFileSystem = require('memory-fs');` 。
+### 在react项目中热加载更好的体验
+https://blog.csdn.net/huangpb123/article/details/78556652  
+webpack-dev-server已经提供了热加载的功能，但是当我们修改某个组件的时候会导致刷新整个页面，发现这一点和vue的项目是不太一样。如果要实现和vue项目一样的局部刷新功能，需要安装 react-hot-loader。
+- 安装 react-hot-loader
+```shell
+npm install --save-dev react-hot-loader
+```
+- entry 添加 react-hot-loader
+在 webpack.config.js 的 entry 值里加上 react-hot-loader/patch，一定要写在entry 的最前面，如果有 babel-polyfill 就写在: 
+```javascript
+entry: {
+    app: [
+        "react-hot-loader/patch",
+        _p('../src/app.js'),
+    ]
+},  
+```
+- webpack.config 设置 devServer 的 hot 为 true
+- 在 .babelrc 里添加 plugin
+```javascript
+"plugins": [
+  [
+    "react-hot-loader/babel"
+  ],
+],
+```
+- webpack.config 的 plugins 里添加依赖的 HotModuleReplacement 插件
+```javascript
+const webpack = require('webpack');
+module.exports = {
+  //...
+  plugins: [
+      new webpack.HotModuleReplacementPlugin({}),
+  ],  
+  //...
+}
+```
+- 页面的主入口添加些代码
+```javascript
+import { AppContainer } from "react-hot-loader";
 
+const container = document.getElementById("app");
+const render = Component => {
+    ReactDom.hydrate(
+        <AppContainer>
+            <Component />
+        </AppContainer>,
+        container
+    );
+}
+render(App)
+
+if (module.hot) {
+    module.hot.accept("./views/app.jsx", () => {
+        const nextApp = require("./views/app.jsx").default;
+        render(nextApp);
+    });
+}
+```
+或者
+```javascript
+ReactDOM.render(
+    <App />,
+    document.getElementById('app')
+)
+
+if (module.hot) {
+    module.hot.accept();
+}
+```
+
+# plugins
+
+## html-webpack-plugin
+HtmlWebpackPlugin简化了HTML文件的创建，以便为你的webpack包提供服务。
+- 安装依赖
+```shell
+npm install --save-dev html-webpack-plugin
+```
+- 用法
+该插件将为你生成一个 HTML5 文件， 其中包括使用 script 标签的 body 中的所有 webpack 包。 只需添加插件到你的 webpack 配置如下：
+```javascript
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const _p = (src) => path.join(__dirname, src);
+module.exports = {
+  //...
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'webpack',
+      template: /*模板路径*/
+    })
+  ] 
+};
+```
+
+## extract-text-webpack-plugin
+在不使用该插件的情况下，scss，css最终会编译打包进js，最后通过js动态生成style插入到html中。extract-text-webpack-plugin 的作用是分离项目中的css文件。  
+建议在开发环境和生产环境进行区分：  
+开发环境：只做简单的 sass-loader/less-laoder -> css-loader -> style-loader 的编译。有利于提高编译速度。  
+生产环境：sass-loader/less-laoder -> postcss-loader -> css-loader -> style-loader。添加前缀。使用该插件编译成分离成css文件。  
+- 安装依赖
+注意extract-text-webpack-plugin的版本，在webpack@4中使用 extract-text-webpack-plugin@3会报错。这个时候我们要指定版本安装
+```shell
+npm i extract-text-webpack-plugin@next --save-dev
+```
+
+## clean-webpack-plugin
+清理插件
+- 安装依赖
+```shell
+npm i clean-webpack-plugin --save-dev
+```
+- 用法
+在webpack.config plugins 中添加该插件
+```javascript
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+module.exports = {
+  plugins: [
+    new CleanWebpackPlugin(),
+  ],
+};
+```
+
+## webpack-bundle-analyzer 
+打包分析
+- 安装
+```shell
+npm i webpack-bundle-analyzer --save-dev
+```
+- 使用
+```javascript
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
+plugins: [
+    // 打包分析
+    new BundleAnalyzerPlugin({
+        analyzerMode: 'static',
+        analyzerPort: 3000
+    })
+],
+```
+
+# loader
+## 编译es6+
+- 安装依赖
+```shell
+npm i babel-core babel-loader babel-plugin-transform-runtime babel-preset-env babel-preset-stage-0 --save-dev
+```
+- .babelrc 配置：
+```javascript
+{
+  "plugins": [
+    [
+      "transform-runtime",
+      {
+        // "polyfill": false
+      }
+    ]
+  ],
+  "presets": [
+    "stage-0",
+    "env"
+  ]
+}
+```
+- webpack.config配置
+```javascript
+{
+    test: /\.js$/,
+    exclude: /(node_modules)/,
+    use: [
+        {
+            loader: 'babel-loader',
+        }
+    ]
+}
+```
+## 编译sass
+- 安装依赖
+```shell
+npm i node-sass sass-loader style-loader css-loader --save-dev
+```
+- webpack.config 配置
+```javascript
+{
+  test: /\.css|scss$/,
+  use: [
+      {
+          loader: 'style-loader',
+      }, {
+          loader: 'css-loader'
+      }, {
+          loader: 'sass-loader'
+      }
+  ]
+}
+```
+`注意`:配置scss编译的loader是从右往左执行：  
+1. 执行sass-loader，将 Sass 编译成 CSS，默认使用 Node Sass
+2. 执行css-loader，将 CSS 转化成 CommonJS 模块
+3. 执行style-loader，将 JS 字符串生成为 style 节点  
+如果是编译less，需要先安装less，`npm i less --save-dev`。然后将sass-loader替换成less-loader即可。
+
+
+`如果需要给css3特性添加兼容前缀`:
+- 安装依赖
+```shell
+npm i postcss-loader autoprefixer --save-dev
+```
+- 创建 postcss.config.js：
+```javascript
+module.exports = {
+    plugins: [
+        require('autoprefixer')
+    ]
+}
+```
+- webpack.config 配置添加 postcss-loader
+```javascript
+{
+    test: /\.scss$/,
+    use: [
+        {
+            loader: 'style-loader',
+        }, {
+            loader: 'css-loader'
+        }, {
+            loader: 'postcss-loader'
+        }, {
+            loader: 'sass-loader'
+        }
+    ]
+}
+```
+
+`或者`
+不创建 postcss.config.js 文件，直接给 postcss-loader 添加配置项：
+```javascript
+{
+  loader: 'postcss-loader',
+  options: {
+      plugins: [
+          require("autoprefixer")
+      ]
+  }
+}
+```
+好处是不需要多创建一个配置文件。
+
+## 编译react
+(参见 2-react )
+- 安装依赖
+```shell
+npm i react react-dom  babel-preset-react --save-dev
+```
+- 用法
+presets 添加 react。  
+```javascript
+{
+  "plugins": [ "react-hot-loader/babel", "transform-runtime" ],
+  "presets": [ "stage-0", "react", "env" ]
+}
+```
+
+## 编译 vue
+(参见 3-vue )
+- 安装依赖
+```shell
+npm i vue vue-loader vue-template-compiler --save-dev
+```
+- 使用
+webpack.config 中添加loader以及plugins中添加插件
+```javascript
+module.exports = {
+    //...
+    plugins: [
+        new VueLoaderPlugin(),
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.vue$/,
+                use: ['vue-loader'],
+            },
+        ],
+    }
+}
+```
+
+
+
+# webpack@3 升级 webpack@4 注意事项
+
+## extract-text-webpack-plugin
+由于 extract-text-webpack-plugin 还有没有发布对应的正是版本，目前只有  extract-text-webpack-plugin:'4.0.0-beta.0'。  
+所以在安装的时候需要指定安装版本 `npm i extract-text-webpack-plugin@next --save-dev`
+
+## webpack.optimize.CommonsChunkPlugin
+(参见 4-build )  
+webpack@4中不再使用 webpack.optimize.CommonsChunkPlugin 抽离公共模块，[SplitChunksPlugin](https://webpack.docschina.org/plugins/split-chunks-plugin/) 代替其实现功能。  

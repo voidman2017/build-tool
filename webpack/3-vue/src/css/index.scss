@@ -1,0 +1,15 @@
+$c-blue:#27f;
+body{
+    background-color: $c-blue;
+    color:#ccc;
+    animation: myfirst 3s;
+}
+
+@keyframes myfirst
+{
+    from {background: red;}
+    to {background: yellow;}
+}
+.title{
+    display: flex;
+}

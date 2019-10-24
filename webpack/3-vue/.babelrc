@@ -1,0 +1,31 @@
+{
+  "plugins": [
+    // "transform-object-rest-spread",
+    [
+      "react-hot-loader/babel"
+    ],
+    [
+      "transform-runtime",
+      {
+        // "polyfill": false
+      }
+    ]
+  ],
+  "presets": [
+    "stage-0",
+    "react",
+    "env"
+    // "latest"
+  ]
+}
+/* 
+"babel-core": "^6.26.3",
+"babel-loader": "^7.1.5", 
+"babel-plugin-transform-runtime": "^6.23.0",
+"babel-polyfill": "^6.26.0",
+"babel-preset-env": "^1.7.0",
+"babel-preset-latest": "^6.24.1",
+"babel-preset-stage-0": "^6.24.1",
+"babel-plugin-transform-object-rest-spread": "^6.26.0",
+"polyfill-array-includes": "^2.0.0"
+*/
