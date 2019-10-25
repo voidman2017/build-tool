@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import ReactDOM, { render } from 'react-dom';
 
-
-class PageB extends Component {
-    render() {
-        return (
-            <div>
-               <h3>page-b</h3>
-            </div>
+class Home extends Component{
+    render(){
+        return(
+            <h1>page-B</h1>
         )
     }
 }
-export default PageB;
+export default Home;
+
+

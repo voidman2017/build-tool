@@ -56,7 +56,8 @@ webpack xxx.js --output-filename bundle.js --output-path . --mode development
 - 使用 extract-text-webpack-plugin 抽离 css。最后打包的文件大小可能会更大，但是有利于加载优化   
 ![extractTextWebpackPlugin](./img/4-extract-text-webpack-plugin.png)
 - 生产环境 optimization.minimize 设置 true（mode：'production'默认true）。压缩 bundle，减小文件大小。但是编译速度会变慢。
-- 
+- 实现按需加载  
+例如在react项目中，如果不做处理，会在首页加载的时候就加载所有组件，这显示在性能上是一种消耗。可以通过 异步加载（react-loadable）并且设置 webpackChunkName ，实现代码分块，按需加载。
 # entry
 入口起点指示webpack应该使用某个模块作为构建内部依赖图的开始。  
 写法分为单个入口语法和对象语法。  

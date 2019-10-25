@@ -33,7 +33,7 @@ module.exports = merge(Base, {
     },
     output: {
         filename: '[name].bundle.[hash:8].js',
-        chunkFilename: '[name].bundle.[chunkhash:8].js'
+        // chunkFilename: '[name].bundle.[chunkhash:6].js'
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -59,7 +59,6 @@ module.exports = merge(Base, {
                     fallback: 'style-loader',
                     use: ['css-loader', postcss, 'sass-loader']
                 })
-                // use: ['style-loader', 'css-loader', postcss, 'sass-loader']
             },
             {
                 test: /\.less$/,
@@ -67,7 +66,6 @@ module.exports = merge(Base, {
                     fallback: 'style-loader',
                     use: ['css-loader', postcss, 'less-loader']
                 })
-                // use: ['style-loader', 'css-loader', postcss, 'less-loader']
             },
         ],
     },

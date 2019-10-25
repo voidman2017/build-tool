@@ -4,7 +4,7 @@ import ReactDOM, { render } from 'react-dom';
 class Home extends Component{
     render(){
         return(
-            <h1>page-A</h1>
+            <h1>home</h1>
         )
     }
 }

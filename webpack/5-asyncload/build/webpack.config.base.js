@@ -7,10 +7,6 @@ const _p = (src) => path.join(__dirname, src);
 module.exports = {
     entry: {
         app: _p('../src/app.js'),
-        app2: _p('../src/app copy 2.js'),
-        app3: _p('../src/app copy 3.js'),
-        app4: _p('../src/app copy 4.js'),
-        app5: _p('../src/app copy 5.js'),
         swiper: _p('../src/util/swiper.js')
     },
     plugins: [
