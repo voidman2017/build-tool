@@ -6,11 +6,11 @@ import App from '@views/app';
 import '@css/index';
 import '@css/base';
 import '@css/reset';
-import '@css/bootstrap'
+
 
 ReactDOM.render(
     <App />,
-    document.getElementById('app1')
+    document.getElementById('app3')
 )
 
 if (module.hot) {

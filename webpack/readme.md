@@ -15,8 +15,25 @@ npm install webpack --save-dev
 webpack xxx.js --output-filename bundle.js --output-path . --mode development
 ```
 # webpack 性能优化
-- 排除不需要编译的内容：  
-例如在使用 babel-loader 对js进行编译时，可以设置 exclude 选项排除 node_modules 目录或者其他不需要进行编译的源代码以提高打包效率。
+## 打包速度优化
+- 缩小编译范围，减少不必要的编译工作。modules、mainFields、noParse、includes、exclude、alias
+例如在使用 babel-loader 对js进行编译时，可以设置 exclude 选项排除 node_modules 目录或者其他不需要进行编译的源代码, include指定需要解析的范围。以提高打包效率。
+```javascript
+{
+  test: /\.js|jsx$/,
+   include: [ // 表示只解析以下目录，减少loader处理范围
+      _p("../src"),
+  ],
+  exclude: /(node_modules)/, 
+  use: [
+      {
+          loader: 'babel-loader',
+      }
+  ]
+}
+```
+
+
 - 通过使用 cacheDirectory 选项提高打包效率
 ```javascript
 {
@@ -33,6 +50,13 @@ webpack xxx.js --output-filename bundle.js --output-path . --mode development
     ]
 }
 ```
+- 开发环境 optimization.minimize 设置 false，这个是压缩bundle使用的。影响编译速度
+## 项目运行优化
+- 使用 splitChunks 抽离公共模块，减少输出文件大小
+- 使用 extract-text-webpack-plugin 抽离 css。最后打包的文件大小可能会更大，但是有利于加载优化   
+![extractTextWebpackPlugin](./img/4-extract-text-webpack-plugin.png)
+- 生产环境 optimization.minimize 设置 true（mode：'production'默认true）。压缩 bundle，减小文件大小。但是编译速度会变慢。
+- 
 # entry
 入口起点指示webpack应该使用某个模块作为构建内部依赖图的开始。  
 写法分为单个入口语法和对象语法。  
@@ -517,3 +541,5 @@ module.exports = {
 ## webpack.optimize.CommonsChunkPlugin
 (参见 4-build )  
 webpack@4中不再使用 webpack.optimize.CommonsChunkPlugin 抽离公共模块，[SplitChunksPlugin](https://webpack.docschina.org/plugins/split-chunks-plugin/) 代替其实现功能。  
+## html-webpack-plugin 版本不兼容
+在升级webpack4过程中，可能会报错 compilation.mainTemplate.applyPluginsWaterfall is not a function。是因为 html-webpack-plugin 版本不兼容导致的。需要对其进行升级 `npm i html-webpack-plugin@next --save-dev`
