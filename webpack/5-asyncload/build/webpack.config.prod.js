@@ -33,7 +33,7 @@ module.exports = merge(Base, {
     },
     output: {
         filename: '[name].bundle.[hash:8].js',
-        // chunkFilename: '[name].bundle.[chunkhash:6].js'
+        chunkFilename: '[name].chunk.[chunkhash:6].js'
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -88,8 +88,8 @@ module.exports = merge(Base, {
                 }
             })
         ],
-        runtimeChunk: {
-            name: 'manifest'
-        },
+        // runtimeChunk: {
+        //     name: 'manifest'
+        // },
     }
 })

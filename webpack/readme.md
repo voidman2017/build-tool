@@ -57,7 +57,44 @@ webpack xxx.js --output-filename bundle.js --output-path . --mode development
 ![extractTextWebpackPlugin](./img/4-extract-text-webpack-plugin.png)
 - 生产环境 optimization.minimize 设置 true（mode：'production'默认true）。压缩 bundle，减小文件大小。但是编译速度会变慢。
 - 实现按需加载  
-例如在react项目中，如果不做处理，会在首页加载的时候就加载所有组件，这显示在性能上是一种消耗。可以通过 异步加载（react-loadable）并且设置 webpackChunkName ，实现代码分块，按需加载。
+例如在react项目中，如果不做处理，会在首页加载的时候就加载所有组件，这显然在性能上是一种消耗。可以通过 异步加载（react-loadable）并且设置 webpackChunkName ，实现代码分块，按需加载。注意在 webpackChunkName与冒号之间不能有空格，在webpack3可能是支持的，但是在webpack4中是无法获取到chunkname的。
+```javascript
+import React from 'react';
+import ReactDOM, { render } from 'react-dom';
+import { BrowserRouter as Router, Route, Link, Redirect, Switch } from 'react-router-dom';
+import Loadable from 'react-loadable';
+import PageA from '@views/pageA'
+import PageB from '@views/pageB'
+const loading = () => <div>loading...</div>
+const AsyncLoad = (loader) => Loadable({
+    loader,
+    loading
+})
+ReactDOM.render(
+    <Router>
+        <div>
+            <ul>
+                <li><Link to="/">home</Link></li>
+                <li><Link to="/PageA">PageA</Link></li>
+                <li><Link to="/PageB">PageB</Link></li>
+            </ul>
+            <hr />
+            <Switch>
+                <Route exact path="/" component={AsyncLoad(() => import(/*webpackChunkName:'views/home'*/'./views/home'))} />
+                <Route exact path="/PageA" component={PageA} />
+                <Route exact path="/PageB" component={PageB} />
+            </Switch>
+        </div>
+    </Router>
+    ,
+    document.getElementById('app1')
+);
+```
+这里 home.jsx 是通过异步加载的方式被载入的，pageA和pageB并没有。定义的 webpackChunkName 是最终打包的chunk name。
+![](./img/5-chunkname.png)   
+打包之后：  
+![](./img/6-chunkname.png)
+
 # entry
 入口起点指示webpack应该使用某个模块作为构建内部依赖图的开始。  
 写法分为单个入口语法和对象语法。  
@@ -249,7 +286,7 @@ webpack-dev-server已经提供了热加载的功能，但是当我们修改某�
 npm install --save-dev react-hot-loader
 ```
 - entry 添加 react-hot-loader
-在 webpack.config.js 的 entry 值里加上 react-hot-loader/patch，一定要写在entry 的最前面，如果有 babel-polyfill 就写在: 
+在 webpack.config.js 的 entry 值里加上 react-hot-loader/patch，一定要写在entry 的最前面，如果有 babel-polyfill 就写在babel-polyfill 的后面: 
 ```javascript
 entry: {
     app: [
@@ -541,6 +578,11 @@ module.exports = {
 
 ## webpack.optimize.CommonsChunkPlugin
 (参见 4-build )  
-webpack@4中不再使用 webpack.optimize.CommonsChunkPlugin 抽离公共模块，[SplitChunksPlugin](https://webpack.docschina.org/plugins/split-chunks-plugin/) 代替其实现功能。  
+webpack@4中不再使用 webpack.optimize.CommonsChunkPlugin 抽离公共模块，[SplitChunksPlugin](https://webpack.docschina.org/plugins/split-chunks-plugin/) 代替其实现功能。 
+
 ## html-webpack-plugin 版本不兼容
 在升级webpack4过程中，可能会报错 compilation.mainTemplate.applyPluginsWaterfall is not a function。是因为 html-webpack-plugin 版本不兼容导致的。需要对其进行升级 `npm i html-webpack-plugin@next --save-dev`
+
+## output.filename 和 output.chunkFilename 
+官方文档描述的是：chunkFilename决定了非入口(non-entry) chunk 文件的名称。   
+在不配置 optimization.runtimeChunk 的情况下确实如此。如果加入该配置情况就会是 chunkFilename 决定了输出规则。
