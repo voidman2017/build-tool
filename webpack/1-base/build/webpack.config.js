@@ -4,7 +4,7 @@ const _p = (src) => path.join(__dirname, src);
 
 
 module.exports = {
-    mode: 'development',
+    mode: 'none',
     entry: _p('../src/app.js'),
     output: {
         filename: '[name].bundle.[hash].js',
@@ -18,30 +18,25 @@ module.exports = {
         })
     ],
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.scss$/,
-                use: [
-                    {
-                        loader: 'style-loader',
-                    }, {
-                        loader: 'css-loader'
-                    }, {
-                        loader: 'sass-loader'
-                    }
-                ]
+                use: [{
+                    loader: 'style-loader',
+                }, {
+                    loader: 'css-loader'
+                }, {
+                    loader: 'sass-loader'
+                }]
             },
             {
                 test: /\.js$/,
                 exclude: /(node_modules)/,
-                use: [
-                    {
-                        loader: 'babel-loader',
-                        options: {
-                            // cacheDirectory: "./cache",
-                        }
+                use: [{
+                    loader: 'babel-loader',
+                    options: {
+                        // cacheDirectory: "./cache",
                     }
-                ]
+                }]
             }
         ],
     },
