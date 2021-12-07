@@ -1,0 +1,3128 @@
+{
+  "hash": "ed85ee375a12f31c37e6",
+  "version": "5.64.4",
+  "time": 677,
+  "builtAt": 1638845828979,
+  "publicPath": "auto",
+  "outputPath": "E:\\princed\\build-tool\\webpack5\\demo3\\dist",
+  "assetsByChunkName": {
+    "packA/app.miniapp": [
+      "packA/app.miniapp.css",
+      "packA/app.miniapp.js"
+    ],
+    "packB/app.miniapp": [
+      "packB/app.miniapp.css",
+      "packB/app.miniapp.js"
+    ],
+    "app.miniapp": [
+      "app.miniapp.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "app.miniapp.js",
+      "size": 3337,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 3337
+      },
+      "chunkNames": [
+        "app.miniapp"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        0
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "packA/app.miniapp.js",
+      "size": 2194,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 2194
+      },
+      "chunkNames": [
+        "packA/app.miniapp"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        1
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "packB/app.miniapp.js",
+      "size": 2188,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 2188
+      },
+      "chunkNames": [
+        "packB/app.miniapp"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        2
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "packA/index.html",
+      "size": 412,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 412
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "packB/index.html",
+      "size": 412,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 412
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "index.html",
+      "size": 348,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 348
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "packA/app.miniapp.css",
+      "size": 38,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 38
+      },
+      "chunkNames": [
+        "packA/app.miniapp"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        1
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "packB/app.miniapp.css",
+      "size": 36,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 36
+      },
+      "chunkNames": [
+        "packB/app.miniapp"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        2
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 970,
+      "sizes": {
+        "javascript": 300,
+        "runtime": 670
+      },
+      "names": [
+        "app.miniapp"
+      ],
+      "idHints": [],
+      "runtime": [
+        "app.miniapp"
+      ],
+      "files": [
+        "app.miniapp.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "922876bf10f536fd9d36",
+      "childrenByOrder": {},
+      "id": 0,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 211,
+          "sizes": {
+            "javascript": 211
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\head.js",
+          "name": "./src/head.js",
+          "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\head.js",
+          "index": 7,
+          "preOrderIndex": 7,
+          "index2": 6,
+          "postOrderIndex": 6,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+              "name": "./src/index.js",
+              "id": 4
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 5,
+          "issuerId": 4,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+              "resolvedModule": "./src/index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./head.js",
+              "loc": "1:0-34",
+              "moduleId": 4,
+              "resolvedModuleId": 4
+            },
+            {
+              "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+              "resolvedModule": "./src/index.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./head.js",
+              "loc": "2:13-23",
+              "moduleId": 4,
+              "resolvedModuleId": 4
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 89,
+          "sizes": {
+            "javascript": 89
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+          "name": "./src/index.js",
+          "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+          "index": 6,
+          "preOrderIndex": 6,
+          "index2": 7,
+          "postOrderIndex": 7,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 4,
+          "issuerId": null,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./src/index.js",
+              "loc": "app.miniapp",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "app.miniapp",
+          "request": "./src/index.js"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 412,
+      "sizes": {
+        "javascript": 101,
+        "css/mini-extract": 37,
+        "runtime": 274
+      },
+      "names": [
+        "packA/app.miniapp"
+      ],
+      "idHints": [],
+      "runtime": [
+        "packA/app.miniapp"
+      ],
+      "files": [
+        "packA/app.miniapp.css",
+        "packA/app.miniapp.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "270343adc1c7c21dfeec",
+      "childrenByOrder": {},
+      "id": 1,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 50,
+          "sizes": {
+            "javascript": 50
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "name": "./src/packA/index.css",
+          "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+          "issuerName": "./src/packA/index.js",
+          "issuerPath": [
+            {
+              "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+              "name": "./src/packA/index.js",
+              "id": 0
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 1,
+          "issuerId": 0,
+          "chunks": [
+            1
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+              "module": "./src/packA/index.js",
+              "moduleName": "./src/packA/index.js",
+              "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+              "resolvedModule": "./src/packA/index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./index.css",
+              "loc": "1:0-20",
+              "moduleId": 0,
+              "resolvedModuleId": 0
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 51,
+          "sizes": {
+            "javascript": 51
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+          "name": "./src/packA/index.js",
+          "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 0,
+          "issuerId": null,
+          "chunks": [
+            1
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./src/packA/index.js",
+              "loc": "packA/app.miniapp",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "css/mini-extract",
+          "size": 37,
+          "sizes": {
+            "css/mini-extract": 37
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "css|E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css|0",
+          "name": "css ./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "issuerName": "./src/packA/index.css",
+          "issuerPath": [
+            {
+              "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+              "name": "./src/packA/index.js",
+              "id": 0
+            },
+            {
+              "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+              "name": "./src/packA/index.css",
+              "id": 1
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": 1,
+          "chunks": [
+            1
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+              "module": "./src/packA/index.css",
+              "moduleName": "./src/packA/index.css",
+              "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+              "resolvedModule": "./src/packA/index.css",
+              "type": "unknown",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "moduleId": 1,
+              "resolvedModuleId": 1
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 2
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            1
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "packA/app.miniapp",
+          "request": "./src/packA/index.js"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 410,
+      "sizes": {
+        "javascript": 101,
+        "css/mini-extract": 35,
+        "runtime": 274
+      },
+      "names": [
+        "packB/app.miniapp"
+      ],
+      "idHints": [],
+      "runtime": [
+        "packB/app.miniapp"
+      ],
+      "files": [
+        "packB/app.miniapp.css",
+        "packB/app.miniapp.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "cec6b93c4f8bda9b638f",
+      "childrenByOrder": {},
+      "id": 2,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 50,
+          "sizes": {
+            "javascript": 50
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "name": "./src/packB/index.css",
+          "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "index": 4,
+          "preOrderIndex": 4,
+          "index2": 4,
+          "postOrderIndex": 4,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+          "issuerName": "./src/packB/index.js",
+          "issuerPath": [
+            {
+              "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+              "name": "./src/packB/index.js",
+              "id": 2
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 3,
+          "issuerId": 2,
+          "chunks": [
+            2
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+              "module": "./src/packB/index.js",
+              "moduleName": "./src/packB/index.js",
+              "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+              "resolvedModule": "./src/packB/index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./index.css",
+              "loc": "1:0-20",
+              "moduleId": 2,
+              "resolvedModuleId": 2
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 51,
+          "sizes": {
+            "javascript": 51
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+          "name": "./src/packB/index.js",
+          "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 5,
+          "postOrderIndex": 5,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 2,
+          "issuerId": null,
+          "chunks": [
+            2
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./src/packB/index.js",
+              "loc": "packB/app.miniapp",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "css/mini-extract",
+          "size": 35,
+          "sizes": {
+            "css/mini-extract": 35
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "css|E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css|0",
+          "name": "css ./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "index": 5,
+          "preOrderIndex": 5,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "issuerName": "./src/packB/index.css",
+          "issuerPath": [
+            {
+              "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+              "name": "./src/packB/index.js",
+              "id": 2
+            },
+            {
+              "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+              "name": "./src/packB/index.css",
+              "id": 3
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": 3,
+          "chunks": [
+            2
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+              "module": "./src/packB/index.css",
+              "moduleName": "./src/packB/index.css",
+              "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+              "resolvedModule": "./src/packB/index.css",
+              "type": "unknown",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "moduleId": 3,
+              "resolvedModuleId": 3
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 2
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            2
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "packB/app.miniapp",
+          "request": "./src/packB/index.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 51,
+      "sizes": {
+        "javascript": 51
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+      "name": "./src/packA/index.js",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 0,
+      "issuerId": null,
+      "chunks": [
+        1
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./src/packA/index.js",
+          "loc": "packA/app.miniapp",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 51,
+      "sizes": {
+        "javascript": 51
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+      "name": "./src/packB/index.js",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+      "index": 3,
+      "preOrderIndex": 3,
+      "index2": 5,
+      "postOrderIndex": 5,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 2,
+      "issuerId": null,
+      "chunks": [
+        2
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./src/packB/index.js",
+          "loc": "packB/app.miniapp",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 89,
+      "sizes": {
+        "javascript": 89
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+      "name": "./src/index.js",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+      "index": 6,
+      "preOrderIndex": 6,
+      "index2": 7,
+      "postOrderIndex": 7,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 4,
+      "issuerId": null,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./src/index.js",
+          "loc": "app.miniapp",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 50,
+      "sizes": {
+        "javascript": 50
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+      "name": "./src/packA/index.css",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+      "issuerName": "./src/packA/index.js",
+      "issuerPath": [
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+          "name": "./src/packA/index.js",
+          "id": 0
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 1,
+      "issuerId": 0,
+      "chunks": [
+        1
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+          "module": "./src/packA/index.js",
+          "moduleName": "./src/packA/index.js",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+          "resolvedModule": "./src/packA/index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./index.css",
+          "loc": "1:0-20",
+          "moduleId": 0,
+          "resolvedModuleId": 0
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 50,
+      "sizes": {
+        "javascript": 50
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+      "name": "./src/packB/index.css",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+      "index": 4,
+      "preOrderIndex": 4,
+      "index2": 4,
+      "postOrderIndex": 4,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+      "issuerName": "./src/packB/index.js",
+      "issuerPath": [
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+          "name": "./src/packB/index.js",
+          "id": 2
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 3,
+      "issuerId": 2,
+      "chunks": [
+        2
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+          "module": "./src/packB/index.js",
+          "moduleName": "./src/packB/index.js",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+          "resolvedModule": "./src/packB/index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./index.css",
+          "loc": "1:0-20",
+          "moduleId": 2,
+          "resolvedModuleId": 2
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 211,
+      "sizes": {
+        "javascript": 211
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\head.js",
+      "name": "./src/head.js",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\head.js",
+      "index": 7,
+      "preOrderIndex": 7,
+      "index2": 6,
+      "postOrderIndex": 6,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+      "issuerName": "./src/index.js",
+      "issuerPath": [
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+          "name": "./src/index.js",
+          "id": 4
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 5,
+      "issuerId": 4,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+          "resolvedModule": "./src/index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./head.js",
+          "loc": "1:0-34",
+          "moduleId": 4,
+          "resolvedModuleId": 4
+        },
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\index.js",
+          "resolvedModule": "./src/index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./head.js",
+          "loc": "2:13-23",
+          "moduleId": 4,
+          "resolvedModuleId": 4
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "css/mini-extract",
+      "size": 37,
+      "sizes": {
+        "css/mini-extract": 37
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "css|E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css|0",
+      "name": "css ./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+      "issuerName": "./src/packA/index.css",
+      "issuerPath": [
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+          "name": "./src/packA/index.js",
+          "id": 0
+        },
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "name": "./src/packA/index.css",
+          "id": 1
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": 1,
+      "chunks": [
+        1
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "module": "./src/packA/index.css",
+          "moduleName": "./src/packA/index.css",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "resolvedModule": "./src/packA/index.css",
+          "type": "unknown",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "moduleId": 1,
+          "resolvedModuleId": 1
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "css/mini-extract",
+      "size": 35,
+      "sizes": {
+        "css/mini-extract": 35
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "css|E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css|0",
+      "name": "css ./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+      "index": 5,
+      "preOrderIndex": 5,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+      "issuerName": "./src/packB/index.css",
+      "issuerPath": [
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+          "name": "./src/packB/index.js",
+          "id": 2
+        },
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "name": "./src/packB/index.css",
+          "id": 3
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": 3,
+      "chunks": [
+        2
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "module": "./src/packB/index.css",
+          "moduleName": "./src/packB/index.css",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "resolvedModule": "./src/packB/index.css",
+          "type": "unknown",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "moduleId": 3,
+          "resolvedModuleId": 3
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 473,
+      "sizes": {
+        "javascript": 473
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+      "name": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+      "issuerName": "./src/packA/index.css",
+      "issuerPath": [
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+          "name": "./src/packA/index.js",
+          "id": 0
+        },
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "name": "./src/packA/index.css",
+          "id": 1
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": 1,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "loader import",
+          "active": true,
+          "explanation": "",
+          "userRequest": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css.webpack[javascript/auto]!=!!!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "loc": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css.webpack[javascript/auto]!=!!!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 471,
+      "sizes": {
+        "javascript": 471
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+      "name": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+      "issuerName": "./src/packB/index.css",
+      "issuerPath": [
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.js",
+          "name": "./src/packB/index.js",
+          "id": 2
+        },
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "name": "./src/packB/index.css",
+          "id": 3
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": 3,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "loader import",
+          "active": true,
+          "explanation": "",
+          "userRequest": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css.webpack[javascript/auto]!=!!!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "loc": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css.webpack[javascript/auto]!=!!!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 2318,
+      "sizes": {
+        "javascript": 2318
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\runtime\\api.js",
+      "name": "./node_modules/css-loader/dist/runtime/api.js",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\runtime\\api.js",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+      "issuerName": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+      "issuerPath": [
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+          "name": "./src/packA/index.js",
+          "id": 0
+        },
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "name": "./src/packA/index.css",
+          "id": 1
+        },
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "name": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "module": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "moduleName": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "resolvedModule": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+          "loc": "3:0-92",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "module": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "moduleName": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "resolvedModule": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+          "loc": "4:30-57",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "module": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "moduleName": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "resolvedModule": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+          "loc": "3:0-92",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "module": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "moduleName": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "resolvedModule": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+          "loc": "4:30-57",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\runtime\\api.js",
+          "module": "./node_modules/css-loader/dist/runtime/api.js",
+          "moduleName": "./node_modules/css-loader/dist/runtime/api.js",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\runtime\\api.js",
+          "resolvedModule": "./node_modules/css-loader/dist/runtime/api.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "7:0-14",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 7:0-14"
+      ],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 64,
+      "sizes": {
+        "javascript": 64
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\runtime\\noSourceMaps.js",
+      "name": "./node_modules/css-loader/dist/runtime/noSourceMaps.js",
+      "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\runtime\\noSourceMaps.js",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+      "issuerName": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+      "issuerPath": [
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.js",
+          "name": "./src/packA/index.js",
+          "id": 0
+        },
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "name": "./src/packA/index.css",
+          "id": 1
+        },
+        {
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "name": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "module": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "moduleName": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "resolvedModule": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "loc": "2:0-114",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "module": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "moduleName": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packA\\index.css",
+          "resolvedModule": "./src/packA/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packA/index.css",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "loc": "4:58-98",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "module": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "moduleName": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "resolvedModule": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "loc": "2:0-114",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "module": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "moduleName": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\cjs.js!E:\\princed\\build-tool\\webpack5\\demo3\\src\\packB\\index.css",
+          "resolvedModule": "./src/packB/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js!./src/packB/index.css",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "loc": "4:58-98",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\runtime\\noSourceMaps.js",
+          "module": "./node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "moduleName": "./node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\css-loader\\dist\\runtime\\noSourceMaps.js",
+          "resolvedModule": "./node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "3:0-14",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 3:0-14"
+      ],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 267,
+      "sizes": {
+        "runtime": 267
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/compat get default export",
+      "name": "webpack/runtime/compat get default export",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 267,
+      "sizes": {
+        "runtime": 267
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/compat get default export",
+      "name": "webpack/runtime/compat get default export",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        1
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        2
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    }
+  ],
+  "entrypoints": {
+    "packA/app.miniapp": {
+      "name": "packA/app.miniapp",
+      "chunks": [
+        1
+      ],
+      "assets": [
+        {
+          "name": "packA/app.miniapp.css",
+          "size": 38
+        },
+        {
+          "name": "packA/app.miniapp.js",
+          "size": 2194
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 2232,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "packB/app.miniapp": {
+      "name": "packB/app.miniapp",
+      "chunks": [
+        2
+      ],
+      "assets": [
+        {
+          "name": "packB/app.miniapp.css",
+          "size": 36
+        },
+        {
+          "name": "packB/app.miniapp.js",
+          "size": 2188
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 2224,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "app.miniapp": {
+      "name": "app.miniapp",
+      "chunks": [
+        0
+      ],
+      "assets": [
+        {
+          "name": "app.miniapp.js",
+          "size": 3337
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 3337,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "packA/app.miniapp": {
+      "name": "packA/app.miniapp",
+      "chunks": [
+        1
+      ],
+      "assets": [
+        {
+          "name": "packA/app.miniapp.css",
+          "size": 38
+        },
+        {
+          "name": "packA/app.miniapp.js",
+          "size": 2194
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 2232,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "packB/app.miniapp": {
+      "name": "packB/app.miniapp",
+      "chunks": [
+        2
+      ],
+      "assets": [
+        {
+          "name": "packB/app.miniapp.css",
+          "size": 36
+        },
+        {
+          "name": "packB/app.miniapp.js",
+          "size": 2188
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 2224,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "app.miniapp": {
+      "name": "app.miniapp",
+      "chunks": [
+        0
+      ],
+      "assets": [
+        {
+          "name": "app.miniapp.js",
+          "size": 3337
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 3337,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": [
+    {
+      "name": "HtmlWebpackCompiler",
+      "hash": "3a1ad78e6845bd28522f",
+      "version": "5.64.4",
+      "time": 94,
+      "builtAt": 1638845828438,
+      "publicPath": "",
+      "outputPath": "E:\\princed\\build-tool\\webpack5\\demo3\\dist",
+      "assetsByChunkName": {},
+      "assets": [],
+      "chunks": [
+        {
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "recorded": false,
+          "size": 1370,
+          "sizes": {
+            "javascript": 658,
+            "runtime": 712
+          },
+          "names": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "idHints": [],
+          "runtime": [
+            "HtmlWebpackPlugin_0-0"
+          ],
+          "files": [],
+          "auxiliaryFiles": [],
+          "hash": "5790e454206d363e41fe",
+          "childrenByOrder": {},
+          "id": 0,
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "modules": [
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "layer": null,
+              "size": 581,
+              "sizes": {
+                "javascript": 581
+              },
+              "built": true,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\index.html",
+              "name": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
+              "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\index.html",
+              "index": 1,
+              "preOrderIndex": 1,
+              "index2": 1,
+              "postOrderIndex": 1,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "issuer": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": 1,
+              "issuerId": null,
+              "chunks": [
+                0
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\index.html",
+                  "module": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
+                  "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
+                  "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\index.html",
+                  "resolvedModule": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
+                  "type": "cjs self exports reference",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": null,
+                  "loc": "1:109-123",
+                  "moduleId": 1,
+                  "resolvedModuleId": 1
+                },
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": "entry",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\index.html",
+                  "loc": "HtmlWebpackPlugin_0-0",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": null,
+                  "active": true,
+                  "explanation": "used as library export",
+                  "userRequest": null,
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": null,
+              "providedExports": null,
+              "optimizationBailout": [
+                "CommonJS bailout: module.exports is used directly at 1:109-123"
+              ],
+              "depth": 0
+            },
+            {
+              "type": "module",
+              "moduleType": "javascript/esm",
+              "layer": null,
+              "size": 77,
+              "sizes": {
+                "javascript": 77
+              },
+              "built": true,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "javascript/esm|data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "name": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "nameForCondition": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "index": 0,
+              "preOrderIndex": 0,
+              "index2": 0,
+              "postOrderIndex": 0,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "issuer": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": 0,
+              "issuerId": null,
+              "chunks": [
+                0
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": "entry",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                  "loc": "HtmlWebpackPlugin_0-0",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": 0
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 88,
+              "sizes": {
+                "runtime": 88
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/hasOwnProperty shorthand",
+              "name": "webpack/runtime/hasOwnProperty shorthand",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                0
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 274,
+              "sizes": {
+                "runtime": 274
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/make namespace object",
+              "name": "webpack/runtime/make namespace object",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                0
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 27,
+              "sizes": {
+                "runtime": 27
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/publicPath",
+              "name": "webpack/runtime/publicPath",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                0
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "layer": null,
+              "size": 323,
+              "sizes": {
+                "runtime": 323
+              },
+              "built": false,
+              "codeGenerated": true,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "webpack/runtime/require chunk loading",
+              "name": "webpack/runtime/require chunk loading",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                0
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            }
+          ],
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "request": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\index.html"
+            },
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "request": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;"
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/esm",
+          "layer": null,
+          "size": 77,
+          "sizes": {
+            "javascript": 77
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "javascript/esm|data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+          "name": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+          "nameForCondition": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 0,
+          "issuerId": null,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 581,
+          "sizes": {
+            "javascript": 581
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\index.html",
+          "name": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
+          "nameForCondition": "E:\\princed\\build-tool\\webpack5\\demo3\\index.html",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 1,
+          "issuerId": null,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\index.html",
+              "module": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
+              "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
+              "resolvedModuleIdentifier": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\index.html",
+              "resolvedModule": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "1:109-123",
+              "moduleId": 1,
+              "resolvedModuleId": 1
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "E:\\princed\\build-tool\\webpack5\\demo3\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\princed\\build-tool\\webpack5\\demo3\\index.html",
+              "loc": "HtmlWebpackPlugin_0-0",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": null,
+              "active": true,
+              "explanation": "used as library export",
+              "userRequest": null,
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 1:109-123"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 27,
+          "sizes": {
+            "runtime": 27
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/publicPath",
+          "name": "webpack/runtime/publicPath",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 323,
+          "sizes": {
+            "runtime": 323
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/require chunk loading",
+          "name": "webpack/runtime/require chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "entrypoints": {
+        "HtmlWebpackPlugin_0-0": {
+          "name": "HtmlWebpackPlugin_0-0",
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "filteredAssets": 0,
+          "assetsSize": 0,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "namedChunkGroups": {
+        "HtmlWebpackPlugin_0-0": {
+          "name": "HtmlWebpackPlugin_0-0",
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "filteredAssets": 0,
+          "assetsSize": 0,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "errors": [],
+      "errorsCount": 0,
+      "warnings": [],
+      "warningsCount": 0,
+      "children": []
+    }
+  ]
+}
