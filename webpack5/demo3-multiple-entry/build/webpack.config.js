@@ -15,6 +15,7 @@ function mkdirsSync(dirname) {
         }
     }
 }
+
 function copyRecursiveSync(src, dest) {
     var exists = fs.existsSync(src);
     var stats = exists && fs.statSync(src);
@@ -42,17 +43,14 @@ function getComplieFiles(stats) {
 function removeSourceFile(files) {
     files.forEach(file => {
         const url = file.replace('./src', './dist')
-        console.log('path: ', url);
         if (fs.existsSync(path.resolve(cwd(), url))) {
-            console.log('xxxxxxxxxxxxx')
-            fs.unlinkSync(path.resolve(cwd(), url))
+            fs.unlink(path.resolve(cwd(), url), () => { })
         }
     })
 }
 
 class CopyCleanPlugin {
-    constructor(options) {
-    }
+    constructor(options) { }
     apply(compiler) {
         compiler.hooks.beforeRun.tap('beforeRun', function (stats) {
             copyRecursiveSync(path.resolve(cwd(), './src'), path.resolve(cwd(), './dist'))
@@ -61,17 +59,20 @@ class CopyCleanPlugin {
         1.现在是删除编译过的内容，但是可以发现，是保留了没有被import的资源（也是未经过编译的文件）
         2.setTimeout延时执行解决 stats.json生成之后延时执行
         */
-        compiler.hooks.done.tapAsync('done', function (stats) {
-            setImmediate(() => {
-                const statsJson = require(path.resolve(cwd(), './dist/stats.json'))
-                const complieFiles = getComplieFiles(statsJson)
-                removeSourceFile(complieFiles)
-            })
+        compiler.hooks.done.tapAsync('Webpack Bundle Analyzer', function (stats) {
+            const timer = setInterval(() => {
+                if (fs.existsSync(path.resolve(cwd(), './dist/stats.json'))) {
+                    clearInterval(timer)
+                    const statsJson = require(path.resolve(cwd(), './dist/stats.json'))
+                    const complieFiles = getComplieFiles(statsJson)
+                    removeSourceFile(complieFiles)
+                }
+            }, 100)
         });
     }
 }
 
-module.exports = {
+const config = {
     mode: "none",
     entry: {
         "packA/app.miniapp": "./src/packA/index.js",
@@ -88,15 +89,13 @@ module.exports = {
             ]
         }, {
             test: /\.(png|jpg|gif)$/i,
-            use: [
-                {
-                    loader: "url-loader",
-                    options: {
-                        limit: 8192,
-                        esModule: false
-                    }
+            use: [{
+                loader: "url-loader",
+                options: {
+                    limit: 200 * 1024,
+                    esModule: false
                 }
-            ]
+            }]
         },],
     },
     plugins: [
@@ -124,11 +123,14 @@ module.exports = {
         new CopyCleanPlugin(),
     ],
     output: {
-        "filename": "[name].js",
-        "path": path.resolve(cwd(), 'dist')
+        filename: "[name].js",
+        path: path.resolve(cwd(), 'dist'),
+        clean: true
     },
     devServer: {
         compress: true,
         port: 9000,
     },
 }
+
+module.exports = config
